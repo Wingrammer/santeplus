@@ -1,0 +1,21 @@
+{
+  "name": "santeplus",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "hot-build-css": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
+    "build-css": "npx tailwindcss -i ./src/input.css -o ./dist/output.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Wingrammer/santeplus.git"
+  },
+  "author": "HEAD CORPORATION SARL",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Wingrammer/santeplus/issues"
+  },
+  "homepage": "https://github.com/Wingrammer/santeplus#readme"
+}

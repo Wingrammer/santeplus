@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+.banner {
+    background: url("../src/img/bgbanner.jpg") no-repeat fixed center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.aboutImg1{
+    background: url("../src/img/ab1.jpg") no-repeat fixed center;
+    background-size: contain;
+}
+.aboutImg2{
+    background: url("../src/img/ab2.jpg") no-repeat fixed center;
+    background-size: contain;
+}
+.aboutImg3{
+    background: url("../src/img/ab3.jpg") no-repeat fixed center;
+    background-size: contain;
+}

@@ -6,12 +6,12 @@
   <link href="/dist/output.css" rel="stylesheet">
   <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
 </head>
-<body class="z-30">
+<body class="-z-50">
   <header>
     <div class="bg-bleu flex items-center justify-center text-4xl text-blanc py-3 space-x-6">
-      <i class="lab la-whatsapp"></i>
-      <i class="lab la-facebook-f"></i>
-      <i class="las la-phone"></i>
+      <a href="#" class="hover:text-vert"><i class="lab la-whatsapp"></i></a>
+      <a href="#" class="hover:text-vert"> <i class="lab la-facebook-f"></i></a>
+      <a href="#" class="hover:text-vert"> <i class="las la-phone"></i></a>
     </div>
     <div class="header text-xl bg-blanc flex p-6 justify-between items-center">
       <a href="#">
@@ -27,7 +27,7 @@
   </header>
   <div class="banner w-full h-screen relative -z-50">
     <div class="absolute w-full bg-bleu/70 h-full -z-30"></div>
-    <div class="flex flex-col space-y-6 w-1/2 z-40 px-16 pt-32">
+    <div class="flex flex-col space-y-6 w-1/2 px-16 pt-32">
       <span class="text-blanc text-6xl font-bold">Lorem ipsum dolor sit amet</span>
       <span class="text-blanc text-3xl font-medium">consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</span>
       <div class="flex space-x-5">
@@ -59,6 +59,77 @@
         </div>
       </div>
     </div>
-   </div>
+  </div>
+  <div class="product bg-bleu p-11 flex flex-col space-y-8">
+    <div class="flex space-x-8">
+      <div class="flex bg-blanc p-5 rounded-xl w-3/5">
+        <div class="flex flex-col space-y-4 w-1/2">
+          <span class="text-bleu text-4xl font-bold">Lorem ipsum</span>
+          <span class="text-bleu text-2xl font-medium">consectetur adipiscing elit, sed do eiusmod agna aliqua</span>
+          <a href="#" class="rounded-xl bg-vert text-blanc text-2xl p-4 font-bold border hover:bg-blanc hover:text-vert w-fit">Autres produits</a>
+        </div>
+        <div>
+          <img src="../src/img/1.jpg" alt="">
+        </div>
+      </div>
+      <div class="flex flex-col bg-blanc p-5 rounded-xl w-2/5 space-y-4 items-center justify-center">
+        <img src="../src/img/2.jpg" alt="" height="200" width="200">
+        <span class="text-bleu text-5xl font-medium">Lorem ipsum</span>
+      </div>
+    </div>
+    <div class="flex space-x-8">
+      <div class="bg-blanc rounded-xl p-5 flex flex-col items-center justify-center w-1/3">
+        <img src="../src/img/3.jpg" alt="" width="200">
+        <span class="text-bleu text-5xl font-medium">Lorem ipsum</span>
+      </div>
+      <div class="bg-blanc rounded-xl p-5 pt-8 flex flex-col items-center justify-between w-1/3">
+        <img src="../src/img/4.jpg" alt="" width="250">
+        <span class="text-bleu text-5xl font-medium">Lorem ipsum</span>
+      </div>
+      <div class="bg-blanc rounded-xl p-5 flex flex-col items-center justify-center w-1/3">
+        <img src="../src/img/5.jpg" alt="" width="200">
+        <span class="text-bleu text-5xl font-medium">Lorem ipsum</span>
+      </div>
+    </div>
+  </div>
+  <footer class="flex space-x-6 p-10">
+    <div class="flex flex-col space-y-5 w-1/3">
+      <img src="../src/img/20221102_202724.png" alt="">
+      <span class="text-bleu text-2xl font-semibold">consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</span>
+      <div class="flex flex-col space-y-4">
+        <div class="flex space-x-4">
+          <i class="las la-map-marker-alt text-bleu text-2xl"></i>
+          <span class="text-noire text-2xl">consectetur adipiscing elit, sed do eiusmod</span>
+        </div>
+        <div class="flex space-x-4">
+          <i class="las la-phone text-bleu text-2xl"></i>
+          <span class="text-noire text-2xl">+229 xx-xx-xx-xx</span>
+        </div>
+        <div class="flex space-x-4">
+          <i class="las la-envelope text-bleu text-2xl"></i>
+          <span class="text-noire text-2xl">contact@santeplus.com</span>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-col space-y-5 w-1/3 pt-6">
+      <span class="text-vert text-3xl font-bold">Lien éssentiels</span>
+      <a href="#" class="hover:underline text-2xl">Acceuil</a>
+      <a href="#" class="hover:underline text-2xl">A propos</a>
+      <a href="#" class="hover:underline text-2xl">Nos produits</a>
+    </div>
+    <div class="flex flex-col space-y-5 w-1/3 pt-6">
+      <span class="text-vert text-3xl font-bold">Rejoignez notre new letters</span>
+      <input type="text" class="rounded-xl text-bleu border border-bleu bg-white text-xl font-medium p-2" placeholder="Nom">
+      <input type="text" class="rounded-xl text-bleu border border-bleu bg-white text-xl font-medium p-2" placeholder="Prénoms">
+      <input type="text" class="rounded-xl text-bleu border border-bleu bg-white text-xl font-medium p-2" placeholder="Email">
+      <a href="#" class="rounded-xl bg-vert text-blanc p-3 font-bold hover:bg-blanc hover:text-vert border border-vert w-fit">Soumettre</a>
+    </div>
+  </footer>
+  <div class="bg-bleu flex items-center justify-center text-4xl text-blanc py-3 space-x-6">
+    <a href="#" class="hover:text-vert"><i class="lab la-whatsapp"></i></a>
+    <a href="#" class="hover:text-vert"> <i class="lab la-facebook-f"></i></a>
+    <a href="#" class="hover:text-vert"> <i class="las la-phone"></i></a>
+  </div>
+  
 </body>
 </html>

@@ -11,13 +11,13 @@
 }
 .aboutImg1{
     background: url("../src/img/ab1.jpg") no-repeat fixed center;
-    background-size: contain;
+    background-size: cover;
 }
 .aboutImg2{
     background: url("../src/img/ab2.jpg") no-repeat fixed center;
-    background-size: contain;
+    background-size: cover;
 }
 .aboutImg3{
     background: url("../src/img/ab3.jpg") no-repeat fixed center;
-    background-size: contain;
+    background-size: cover;
 }

@@ -6,7 +6,7 @@
 
 .banner {
     background: url("../src/img/bgbanner.jpg") no-repeat fixed center;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 .aboutImg1{

@@ -1,149 +1,241 @@
 <!doctype html>
 <html>
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="/dist/output.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+  <link rel="stylesheet"
+    href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+  />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('#open').click(function () {
+        $('#menu').toggleClass('show');
+        $('#navbar').toggleClass('navbar');
+        $('#open').toggleClass('switch');
+        $('#close').toggleClass('switch');
+      });
+    });
+    $(document).ready(function () {
+      $('.navbar').click(function () {
+        $('#menu').toggleClass('show');
+        $('#open').toggleClass('switch');
+        $('#close').toggleClass('switch');
+      });
+    });
+    $(document).ready(function () {
+      $('#prod').click(function () {
+        $('#menu').toggleClass('flex');
+      });
+    });
+  </script>
 </head>
 <!--Removed class="-z-50"-->
-<body>
-  <header>
-    <div class="bg-bleu flex items-center justify-center text-4xl text-blanc py-3 space-x-6">
+
+<body class="relative z-30">
+  <div class="absolute inset-0 z-40 hidden w-full h-full space-y-4 overflow-auto shadow-xl flex-c-ol space- lg:mx-8 rounded-2xl bg-noire shadow-blanc">
+    <span class="flex items-end p-4 text-3xl text-bleu">
+      <i class="absolute cursor-pointer las la-times inset switch" id="closeImg"></i>
+    </span>
+    <div class="flex flex-wrap p-6 space-x-4 space-y-4">
+      <img src="../src/img/prod/00.jpg" alt="" height="150" width="200">
+      <img src="../src/img/prod/1.jpg" alt="" height="150" width="200">
+      <img src="../src/img/prod/2 (1).jpg" alt="" height="150" width="200">
+      <img src="../src/img/prod/2.jpg" alt="" height="150" width="200">
+      <img src="../src/img/prod/4.jpg" alt="" height="150" width="200">
+      <img src="../src/img/prod/5.jpg" alt="" height="150" width="200">
+      <img src="../src/img/prod/6.jpg" alt="" height="150" width="200">
+      <img src="../src/img/prod/7.jpg" alt="" height="150" width="200">
+    </div>
+</div>
+  <header class="sticky top-0 left-0 right-0 z-30 ">
+    <div class="flex items-center justify-center py-3 space-x-6 text-4xl bg-bleu text-blanc opacity-90">
       <a href="#" class="hover:text-vert"><i class="lab la-whatsapp"></i></a>
       <a href="#" class="hover:text-vert"> <i class="lab la-facebook-f"></i></a>
       <a href="#" class="hover:text-vert"> <i class="las la-phone"></i></a>
     </div>
-    <div class="header text-xl bg-blanc flex p-6 justify-between items-center">
+    <div class="flex items-center justify-between p-6 text-xl header bg-blanc opacity-90">
       <a href="#">
         <img src="../src/img/20221102_202724.png" alt="" height="90" width="200">
       </a>
-      <div class="hidden sm:flex space-x-2 items-center">
-        <a href="#" class="hover:underline">Acceuil</a>
-        <a href="#" class="hover:underline">A propos</a>
-        <a href="#" class="hover:underline">Nos produits</a>
-        <a href="#" class="rounded-xl bg-vert text-blanc p-3 hover:bg-blanc hover:text-vert border border-vert">Contacts</a>
+      <div class="items-start hidden space-y-6 sm:items-center sm:space-y-0 sm:space-x-2 sm:flex" id="menu">
+        <a href="#" class="hover:underline" id="navbar">Acceuil</a>
+        <a href="#about" class="hover:underline" id="navbar">A propos</a>
+        <a href="#product" class="hover:underline" id="navbar">Nos produits</a>
+        <a href="#"
+          class="p-3 border rounded-xl bg-vert text-blanc hover:bg-blanc hover:text-vert border-vert">Contacts</a>
       </div>
-      <div class="flex sm:hidden relative text-5xl text-bleu font-bold">
-        <i class="las la-times absolute"></i>
-        <i class="las la-bars"></i>
-      </div>
+      <span class="relative flex items-center justify-center mr-8 text-5xl font-bold menu sm:hidden text-bleu">
+        <i class="absolute z-30 cursor-pointer las la-bars inset" id="open"></i>
+        <i class="absolute cursor-pointer las la-times inset switch" id="close"></i>
+      </span>
     </div>
-    
+
   </header>
   <!--Removed -z-10-->
-  <div class="banner w-full lg:h-screen relative">
+  <div class="relative w-full banner lg:h-screen">
     <!--Removed -z-30-->
-    <div class="absolute w-full bg-bleu/70 h-full z-10"></div>
+    <div class="absolute z-10 w-full h-full bg-bleu/70"></div>
     <!--Removed z-50-->
-    <div class="flex flex-col space-y-3 lg:space-y-6 w-full lg:w-1/2 p-6 lg:px-16 lg:pt-32">
-      <span class="text-blanc text-3xl sm:text-4xl lg:text-6xl font-bold z-20">Lorem ipsum dolor sit amet</span>
-      <span class="text-blanc text-xl sm:text-2xl lg:text-3xl font-medium z-20">consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</span>
-      
+    <div class="flex flex-col w-full p-6 space-y-3 lg:space-y-6 lg:w-1/2 lg:px-16 lg:pt-32">
+      <span class="z-20 text-3xl font-bold text-blanc sm:text-4xl lg:text-6xl">Lorem ipsum dolor sit amet</span>
+      <span class="z-20 text-xl font-medium text-blanc sm:text-2xl lg:text-3xl">consectetur adipiscing elit, sed do
+        eiusmod tempor incididunt ut labore et dolore magna aliqua</span>
+
       <div class="flex space-x-5">
         <!--Removed z-50-->
-        <a href="#contact" class="rounded-xl p-3 text-xl lg:text-2xl font-medium bg-blanc text-bleu  hover:bg-bleu hover:text-blanc border border-bleu z-20">GET STARTED</a>
-        <a href="#" class="rounded-xl p-3 text-xl lg:text-2xl font-medium bg-vert text-blanc hover:bg-blanc hover:text-vert border border-vert z-20">CONTACTS</a>
+        <a href="#about"
+          class="z-20 p-3 text-xl font-medium border rounded-xl lg:text-2xl bg-blanc text-bleu hover:bg-bleu hover:text-blanc border-bleu">GET
+          STARTED</a>
+        <a href="#"
+          class="z-20 p-3 text-xl font-medium border rounded-xl lg:text-2xl bg-vert text-blanc hover:bg-blanc hover:text-vert border-vert">CONTACTS</a>
       </div>
     </div>
   </div>
-  <div class="about flex flex-col items-center justify-center px-16 py-10 space-y-6">
-    <span class="text-vert text-xl sm:text-2xl lg:text-3xl font-bold">Lorem ipsum dolor sit amet</span>
-    <div class="overflow-auto flex space-x-8">
-      <div class="aboutImg1 rounded-xl w-full lg:w-1/3 p- lg:p-9">
-        <div class="bg-bleu/70 rounded-xl flex flex-col space-y-4 text-blanc p-4">
-          <span class="font-bold text-3xl">Lorem ipsum dolor</span>
+  <div class="flex flex-col items-center justify-center py-10 space-y-6 " id="about">
+    <span class="text-xl font-bold text-vert sm:text-2xl lg:text-3xl">Lorem ipsum dolor sit amet</span>
+    <div class="hidden w-11/12 overflow-auto lg:flex lg:space-x-8">
+      <div class="w-full p-4 aboutImg1 rounded-xl lg:w-1/3 lg:p-9">
+        <div class="flex flex-col p-4 space-y-4 bg-bleu/70 rounded-xl text-blanc">
+          <span class="text-3xl font-bold">Lorem ipsum dolor</span>
           <span class="text-2xl">consectetur adipiscing elit, sed do eiusmod agna aliqua</span>
         </div>
       </div>
-      <div class="aboutImg2 rounded-xl w-full lg:w-1/3 p- lg:p-9">
-        <div class="bg-bleu/70 rounded-xl flex flex-col space-y-4 text-blanc p-4">
-          <span class="font-bold text-3xl">Lorem ipsum dolor</span>
+      <div class="w-full p-4 aboutImg2 rounded-xl lg:w-1/3 lg:p-9">
+        <div class="flex flex-col p-4 space-y-4 bg-bleu/70 rounded-xl text-blanc">
+          <span class="text-3xl font-bold">Lorem ipsum dolor</span>
           <span class="text-2xl">consectetur adipiscing elit, sed do eiusmod agna aliqua</span>
         </div>
       </div>
-      <div class="aboutImg3 rounded-xl w-full lg:w-1/3 p- lg:p-9">
-        <div class="bg-bleu/70 rounded-xl flex flex-col space-y-4 text-blanc p-4">
-          <span class="font-bold text-3xl">Lorem ipsum dolor</span>
+      <div class="w-full p-4 aboutImg3 rounded-xl lg:w-1/3 lg:p-9">
+        <div class="flex flex-col p-4 space-y-4 bg-bleu/70 rounded-xl text-blanc">
+          <span class="text-3xl font-bold">Lorem ipsum dolor</span>
           <span class="text-2xl">consectetur adipiscing elit, sed do eiusmod agna aliqua</span>
         </div>
       </div>
     </div>
+    <div class="flex w-11/12 swiper lg:hidden">
+      <div class="swiper-wrapper">
+        <div class="w-[90%] swiper-slide aboutImg1 rounded-xl">
+          <div class="flex flex-col p-8 space-y-4 bg-bleu/70 rounded-xl text-blanc">
+            <span class="text-3xl font-bold">Lorem ipsum dolor</span>
+            <span class="text-2xl">consectetur adipiscing elit, sed do eiusmod agna aliqua</span>
+          </div>
+        </div>
+        <div class="w-[90%] swiper-slide aboutImg2 rounded-xl">
+          <div class="flex flex-col p-8 space-y-4 bg-bleu/70 rounded-xl text-blanc">
+            <span class="text-3xl font-bold">Lorem ipsum dolor</span>
+            <span class="text-2xl">consectetur adipiscing elit, sed do eiusmod agna aliqua</span>
+          </div>
+        </div>
+        <div class="w-[90%] swiper-slide aboutImg3 rounded-xl">
+          <div class="flex flex-col p-8 space-y-4 bg-bleu/70 rounded-xl text-blanc">
+            <span class="text-3xl font-bold">Lorem ipsum dolor</span>
+            <span class="text-2xl">consectetur adipiscing elit, sed do eiusmod agna aliqua</span>
+          </div>
+        </div>
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev bg-opacity-10"></div>
+      <div class="swiper-button-next bg-opacity-10"></div>
+    </div>
   </div>
-  <div class="product bg-bleu p-11 flex flex-col space-y-8">
+  <div class="flex flex-col space-y-8 bg-bleu p-11" id="product">
     <div class="flex space-x-8">
-      <div class="flex bg-blanc p-5 rounded-xl w-full lg:w-3/5">
-        <div class="flex flex-col space-y-4 w-full sm:w-1/2">
-          <span class="text-bleu text-4xl font-bold">Lorem ipsum</span>
-          <span class="text-bleu text-2xl font-medium">consectetur adipiscing elit, sed do eiusmod agna aliqua</span>
-          <a href="#" class="rounded-xl bg-vert text-blanc text-2xl p-4 font-bold border hover:bg-blanc hover:text-vert w-fit">Autres produits</a>
+      <div class="flex w-full p-5 bg-blanc rounded-xl lg:w-3/5">
+        <div class="flex flex-col w-full space-y-4 sm:w-1/2">
+          <span class="text-4xl font-bold text-bleu">Lorem ipsum</span>
+          <span class="text-2xl font-medium text-bleu">consectetur adipiscing elit, sed do eiusmod agna aliqua</span>
+          <a href="#product"
+            class="p-4 text-2xl font-bold border rounded-xl bg-vert text-blanc hover:bg-blanc hover:text-vert w-fit" id="prod">Autres
+            produits</a>
         </div>
         <div class="hidden sm:flex">
           <img src="../src/img/1.jpg" alt="">
         </div>
       </div>
-      <div class="hidden lg:flex flex-col bg-blanc p-5 rounded-xl w-2/5 space-y-4 items-center justify-center">
+      <div class="flex-col items-center justify-center hidden w-2/5 p-5 space-y-4 lg:flex bg-blanc rounded-xl">
         <img src="../src/img/2.jpg" alt="" height="200" width="200">
-        <span class="text-bleu text-5xl font-medium">Lorem ipsum</span>
+        <span class="text-5xl font-medium text-bleu">Lorem ipsum</span>
       </div>
     </div>
-    <div class="hidden lg:flex space-x-8">
-      <div class="bg-blanc rounded-xl p-5 flex flex-col items-center justify-center w-1/3">
+    <div class="hidden space-x-8 lg:flex">
+      <div class="flex flex-col items-center justify-center w-1/3 p-5 bg-blanc rounded-xl">
         <img src="../src/img/3.jpg" alt="" width="200">
-        <span class="text-bleu text-5xl font-medium">Lorem ipsum</span>
+        <span class="text-5xl font-medium text-bleu">Lorem ipsum</span>
       </div>
-      <div class="bg-blanc rounded-xl p-5 pt-8 flex flex-col items-center justify-between w-1/3">
+      <div class="flex flex-col items-center justify-between w-1/3 p-5 pt-8 bg-blanc rounded-xl">
         <img src="../src/img/4.jpg" alt="" width="250">
-        <span class="text-bleu text-5xl font-medium">Lorem ipsum</span>
+        <span class="text-5xl font-medium text-bleu">Lorem ipsum</span>
       </div>
-      <div class="bg-blanc rounded-xl p-5 flex flex-col items-center justify-center w-1/3">
+      <div class="flex flex-col items-center justify-center w-1/3 p-5 bg-blanc rounded-xl">
         <img src="../src/img/5.jpg" alt="" width="200">
-        <span class="text-bleu text-5xl font-medium">Lorem ipsum</span>
+        <span class="text-5xl font-medium text-bleu">Lorem ipsum</span>
       </div>
     </div>
   </div>
-  <footer class="flex flex-wrap lg:flex-nowrap space-y-4 lg:space-x-6 p-10">
-    <div class="flex flex-col space-y-5 w-full lg:w-1/3">
+  <footer class="flex flex-wrap p-10 space-y-4 lg:flex-nowrap lg:space-x-6">
+    <div class="flex flex-col w-full space-y-5 lg:w-1/3">
       <img src="../src/img/20221102_202724.png" alt="">
-      <span class="text-bleu text-2xl font-semibold">consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</span>
+      <span class="text-2xl font-semibold text-bleu">consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+        labore et dolore magna aliqua</span>
       <div class="flex flex-col space-y-4">
-        <div class="flex space-x-4 items-center">
-          <i class="las la-map-marker-alt text-bleu text-2xl"></i>
-          <span class="text-noire text-2xl">consectetur adipiscing elit, sed do eiusmod</span>
+        <div class="flex items-center space-x-4">
+          <i class="text-2xl las la-map-marker-alt text-bleu"></i>
+          <span class="text-2xl text-noire">consectetur adipiscing elit, sed do eiusmod</span>
         </div>
-        <div class="flex space-x-4 items-center">
-          <i class="las la-phone text-bleu text-2xl"></i>
-          <span class="text-noire text-2xl">+229 xx-xx-xx-xx</span>
+        <div class="flex items-center space-x-4">
+          <i class="text-2xl las la-phone text-bleu"></i>
+          <span class="text-2xl text-noire">+229 xx-xx-xx-xx</span>
         </div>
-        <div class="flex space-x-4 items-center">
-          <i class="las la-envelope text-bleu text-2xl"></i>
-          <span class="text-noire text-2xl">contact@santeplus.com</span>
+        <div class="flex items-center space-x-4">
+          <i class="text-2xl las la-envelope text-bleu"></i>
+          <span class="text-2xl text-noire">contact@santeplus.com</span>
         </div>
       </div>
     </div>
-    <div class="hidden lg:flex flex-col space-y-5 w-1/3 pt-6">
-      <span class="text-vert text-3xl font-bold">Lien éssentiels</span>
-      <a href="#" class="hover:underline text-2xl">Acceuil</a>
-      <a href="#" class="hover:underline text-2xl">A propos</a>
-      <a href="#" class="hover:underline text-2xl">Nos produits</a>
+    <div class="flex-col hidden w-1/3 pt-6 space-y-5 lg:flex">
+      <span class="text-3xl font-bold text-vert">Lien éssentiels</span>
+      <a href="#" class="text-2xl hover:underline">Acceuil</a>
+      <a href="#about" class="text-2xl hover:underline">A propos</a>
+      <a href="#product" class="text-2xl hover:underline">Nos produits</a>
     </div>
-    <div class="flex flex-col space-y-5 w-full lg:w-1/3 pt-6">
-      <span class="text-vert text-3xl font-bold">Rejoignez notre new letters</span>
-      <input type="text" class="rounded-xl text-bleu border border-bleu bg-white text-xl font-medium p-2 placeholder:text-bleu placeholder:" placeholder="Nom">
-      <input type="text" class="rounded-xl text-bleu border border-bleu bg-white text-xl font-medium p-2 placeholder:text-bleu placeholder:" placeholder="Prénoms">
-      <input type="text" class="rounded-xl text-bleu border border-bleu bg-white text-xl font-medium p-2 placeholder:text-bleu placeholder:" placeholder="Email">
-      <a href="#" class="rounded-xl bg-vert text-blanc p-3 font-bold hover:bg-blanc hover:text-vert border border-vert w-fit">Soumettre</a>
+    <div class="flex flex-col w-full pt-6 space-y-5 lg:w-1/3">
+      <span class="text-3xl font-bold text-vert">Rejoignez notre new letters</span>
+      <input type="text"
+        class="p-2 text-xl font-medium bg-white border rounded-xl text-bleu border-bleu placeholder:text-bleu placeholder:"
+        placeholder="Nom">
+      <input type="text"
+        class="p-2 text-xl font-medium bg-white border rounded-xl text-bleu border-bleu placeholder:text-bleu placeholder:"
+        placeholder="Prénoms">
+      <input type="text"
+        class="p-2 text-xl font-medium bg-white border rounded-xl text-bleu border-bleu placeholder:text-bleu placeholder:"
+        placeholder="Email">
+      <a href="#"
+        class="p-3 font-bold border rounded-xl bg-vert text-blanc hover:bg-blanc hover:text-vert border-vert w-fit">Soumettre</a>
     </div>
   </footer>
-  <div class="bg-bleu flex items-center justify-center text-4xl text-blanc py-3 space-x-6">
+  <div class="flex items-center justify-center py-3 space-x-6 text-4xl bg-bleu text-blanc">
     <a href="#" class="hover:text-vert"><i class="lab la-whatsapp"></i></a>
     <a href="#" class="hover:text-vert"> <i class="lab la-facebook-f"></i></a>
     <a href="#" class="hover:text-vert"> <i class="las la-phone"></i></a>
   </div>
-  <hr class="bg-blanc h-1 text-blanc">
-  <div class="flex flex-col sm:flex-row items-center justify-between space-x-8 bg-bleu px-12 py-6">
-    <span class="text-blanc text-lg sm:text-xl font-normal">Copyright ESJ SANTE PLUS</span>
-    <span class="text-blanc text-lg sm:text-xl font-normal">Developpé par <a href="#" class="hover:font-bold">HEAD CORPORATION</a></span>
-  </div>
+  <hr class="h-1 bg-blanc text-blanc">
+  <div class="flex flex-col items-center justify-between px-12 py-6 space-x-8 sm:flex-row bg-bleu">
+    <span class="text-lg font-normal text-blanc sm:text-xl">Copyright ESJ SANTE PLUS</span>
+    <span class="text-lg font-normal text-blanc sm:text-xl">Developpé par <a href="#" class="hover:font-bold">HEAD
+        CORPORATION</a></span>
+  </div>  
+  <script src="./main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 </body>
+
 </html>

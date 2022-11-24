@@ -10,14 +10,39 @@
     background-repeat: no-repeat;
 }
 .aboutImg1{
-    background: url("../src/img/ab1.jpg") no-repeat fixed center;
-    background-size: cover;
+    background: url("../src/img/ab1.jpg") no-repeat center;
+    background-size: 100%;
 }
 .aboutImg2{
-    background: url("../src/img/ab2.jpg") no-repeat fixed center;
-    background-size: cover;
+    background: url("../src/img/ab2.jpg") no-repeat center;
+    background-size: 100%;
 }
 .aboutImg3{
-    background: url("../src/img/ab3.jpg") no-repeat fixed center;
-    background-size: cover;
+    background: url("../src/img/ab3.jpg") no-repeat center;
+    background-size: 100%;
+}
+
+@media (max-width:1000px){
+    .show{
+        display: flex;
+        flex-direction: column;
+        position:fixed;
+        width: 100%;
+        background:#64C5BB;
+        z-index: 100;
+        top: 149px;
+        left: 0;
+        right: 0;
+        padding:20px;
+        font-size: xx-large;
+        align-items: center;
+        justify-content: left;
+        text-align: left;
+        box-shadow: 20px;
+        box-shadow: aliceblue;
+        opacity: 90%;
+    }
+    .switch{
+        opacity: 0;
+     }
 }

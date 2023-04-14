@@ -1,14 +1,29 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,js,svg}"],
+  content: [
+    "./src/*.html"
+  ],
   theme: {
     colors: {
-      'bleu': '#64C5BB',
-      'vert': '#099408',
+      'bleu': '#12C698',
+      'vert': '#069205',
       'blanc': '#FFFFFF',
       'noire': '#000000',
     },
     extend: {},
-  },
-  plugins: [],
+    animation: {
+      fadeIn: 'fadeIn 2s ease-in forwards',
+    },
+    keyframes: {
+      fadeIn: {
+        '0%': {
+          opacity: 0,
+        },
+        '100%': {
+          opacity: 1,
+        },
+      },
+    },
+  }
 }
+

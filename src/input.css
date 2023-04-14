@@ -5,7 +5,7 @@
 
 
 .banner {
-    background: url("../src/img/bgbanner.jpg") no-repeat fixed center;
+    background: url("../src/img/bgBanner.png") no-repeat fixed center;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -46,3 +46,49 @@
         opacity: 0;
      }
 }
+
+/* .swiper {
+    width: 600px;
+    height: 300px;
+  } */
+
+  /* swiper css */
+
+  html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+swiper-container {
+  width: 425px !important;
+  height: 300px;
+}
+
+swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 425px !important;
+  height: 300px;
+}
+
+swiper-slide img {
+  display: block;
+  width: 425;
+  height: 200;
+  object-fit: cover;
+}
+  

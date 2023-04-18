@@ -65,20 +65,21 @@
           <a href="#" class="hover:text-vert"> <i class="lab la-facebook-f"></i></a>
           <a href="#" class="hover:text-vert"> <i class="las la-phone"></i></a>
         </div>
-        <div class="container flex items-center justify-between py-6 m-auto">
+
+        <div class="container flex items-center justify-between py-6 m-auto"> <!-- NavBar grand écran -->
           <a href="#" class="flex items-center justify-center logo">
             <img src="./img/esjLogo.png" class="img_logo " alt="" height="70" width="100">
             <p class="text-2xl font-bold nom_entreprise text-bleu">ESJ Santé Plus</p>
           </a>
 
           <ul class="items-center hidden mx-8 space-x-4 text-base font-semibold cursor-pointer md:flex md:static">
-            <li class=" hover:underline"><a href="#acceuil"
-                class="  sm:text-xl lg:text-2xl text-black font-[500]">Acceuil</a></li>
-            <li class=" hover:underline"><a href="#propos"
-                class=" sm:text-xl lg:text-2xl text-black font-[500]">A propos</a></li>
-            <li class=" hover:underline"><a href="#produits_id"
-                class=" sm:text-xl lg:text-2xl text-black font-[500]">Nos produits</a></li>
-            <a href=""
+            <li class=" hover:underline"><a href="#" class=" sm:text-xl lg:text-2xl text-black font-[500]">Acceuil</a>
+            </li>
+            <li class=" hover:underline"><a href="#propos" class=" sm:text-xl lg:text-2xl text-black font-[500]">A
+                propos</a></li>
+            <li class=" hover:underline"><a href="#product" class=" sm:text-xl lg:text-2xl text-black font-[500]">Nos
+                produits</a></li>
+            <a href="#contact"
               class="p-4 mr-4 border-2 sm:text-xl lg:text-2xl boutton_menu bg-vert text-blanc rounded-xl hover:bg-blanc hover:text-vert border-vert">Contacts</a>
           </ul>
 
@@ -86,20 +87,21 @@
             <div class="w-5 h-1 mb-1 bg-bleu "></div>
             <div class="w-5 h-1 mb-1 bg-bleu"></div>
             <div class="w-5 h-1 mb-1 bg-bleu"></div>
-
             <div
               class="absolute w-8/12 h-screen transition-all duration-300 bg-green-200 opacity-50 -border -right-full group-focus:right-0 group-focus:opacity-100 "
-              style="top:164px">
+              style="top:164px"> <!-- NavBar responsive -->
 
               <ul class="flex flex-col items-center w-full m-4 text-base cursor-pointer">
-                <li class="m-3 hover:underline "><a href="#acceuil"
+                <li class="m-3 hover:underline "><a href="#"
                     class="sm:text-xl lg:text-2xl text-black font-[500]">Acceuil</a></li>
-                <li class="m-3 hover:underline"><a href="#propos" class=" sm:text-xl lg:text-2xl text-black font-[500]">A
+                <li class="m-3 hover:underline"><a href="#propos"
+                    class=" sm:text-xl lg:text-2xl text-black font-[500]">A
                     propos</a></li>
-                <li class="m-3 hover:underline"><a href="#produits_id" class=" sm:text-xl lg:text-2xl text-black font-[500]">Nos
+                <li class="m-3 hover:underline"><a href="#product"
+                    class=" sm:text-xl lg:text-2xl text-black font-[500]">Nos
                     produits</a></li>
-                    <a href=""
-                    class="p-4 mr-4 border-2 sm:text-xl lg:text-2xl boutton_menu bg-vert text-blanc rounded-xl hover:bg-blanc hover:text-vert border-vert">Contacts</a>
+                <a href="#contact"
+                  class="p-4 mr-4 border-2 sm:text-xl lg:text-2xl boutton_menu bg-vert text-blanc rounded-xl hover:bg-blanc hover:text-vert border-vert">Contacts</a>
               </ul>
             </div>
 
@@ -107,49 +109,49 @@
         </div>
       </nav>
 
-      <div class="items-start hidden space-y-6 sm:items-center sm:space-y-0 sm:space-x-4 sm:flex" id="menu">
-        <!-- Main modal -->
+     <!-- <div class="items-start hidden space-y-6 sm:items-center sm:space-y-0 sm:space-x-4 sm:flex" id="menu">
+        
         <div id="defaultModal4" tabindex="-1" aria-hidden="true"
-        class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] md:h-full">
-        <div class="relative w-full h-full max-w-2xl md:h-auto">
-        <!-- Modal content -->
-        <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-          <!-- Modal header -->
-          <div class="flex items-start justify-between p-4 border-b rounded-t bg-bleu/70">
-            <h3 class="text-xl font-semibold text-center text-white dark:text-white">
-              Contacter nous !
-            </h3>
-            <button type="button"
-              class="p-4 text-2xl font-bold border rounded-xl text-blanc hover:bg-blanc hover:text-vert w-fit"
-              data-modal-hide="defaultModal4">
-              <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd"
-                  d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                  clip-rule="evenodd"></path>
-              </svg>
-              <span class="sr-only">Close modal</span>
-            </button>
-          </div>
-          <!-- Modal body -->
-          <div class="p-6 bg-bleu/70">
-            <p class="text-xl leading-relaxed text-white dark:text-gray-400">
-              OK !
-            </p>
-          </div>
-          <!-- Modal footer -->
-          <div class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b bg-bleu/70">
-            <button data-modal-hide="defaultModal4" type="button"
-              class="p-4 text-2xl font-bold border rounded-xl bg-vert text-blanc hover:bg-blanc hover:text-vert w-fit">Fermer</button>
+          class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] md:h-full">
+          <div class="relative w-full h-full max-w-2xl md:h-auto">
+          
+            <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+             
+              <div class="flex items-start justify-between p-4 border-b rounded-t bg-bleu/70">
+                <h3 class="text-xl font-semibold text-center text-white dark:text-white">
+                  Contacter nous !
+                </h3>
+                <button type="button"
+                  class="p-4 text-2xl font-bold border rounded-xl text-blanc hover:bg-blanc hover:text-vert w-fit"
+                  data-modal-hide="defaultModal4">
+                  <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                      d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                      clip-rule="evenodd"></path>
+                  </svg>
+                  <span class="sr-only">Close modal</span>
+                </button>
+              </div>
+             
+              <div class="p-6 bg-bleu/70">
+                <p class="text-xl leading-relaxed text-white dark:text-gray-400">
+                  OK !
+                </p>
+              </div>
+             
+              <div class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b bg-bleu/70">
+                <button data-modal-hide="defaultModal4" type="button"
+                  class="p-4 text-2xl font-bold border rounded-xl bg-vert text-blanc hover:bg-blanc hover:text-vert w-fit">Fermer</button>
+              </div>
+            </div>
           </div>
         </div>
-        </div>
-        </div>
-      </div>
-      <span class="relative flex items-center justify-center mr-8 text-5xl font-bold menu sm:hidden text-bleu">
+      </div>-->
+      <!--<span class="relative flex items-center justify-center mr-8 text-5xl font-bold menu sm:hidden text-bleu">
         <i class="absolute z-30 cursor-pointer las la-bars inset" id="open"></i>
         <i class="absolute cursor-pointer las la-times inset switch" id="close"></i>
-      </span>
+      </span>-->
     </div>
 
   </header>
@@ -162,30 +164,32 @@
     <div class="flex flex-col p-6 space-y-3 lg:space-y-6 lg:w-1/2 lg:px-16 lg:pt-32">
       <span class="z-20 text-3xl font-bold text-blanc sm:text-4xl lg:text-6xl">BIENVENUE SUR LE SITE DE ESJ
         SANTE PLUS.!</span>
-      <span class="z-20 text-xl font-medium text-blanc sm:text-2xl lg:text-3xl">ESJ SANTE PLUS est une entreprise
-        béninoise de vente de matériel médical pour professionnels et particuliers. Notre vision est de concourir à
+      <span class="z-20 text-xl font-medium text-blanc sm:text-2xl lg:text-3xl">ESJ SANTE PLUS est une entreprise de vente de matériel
+        médical pour professionnels et particuliers. Notre vision est de concourir à
         l’amélioration des conditions de prise en charge des patients de nos services de santé en fournissant des
-        matériels de qualité.</span>
+        matériels de qualité.
+      </span>
 
       <div class="flex space-x-5">
         <!--Removed z-50-->
         <a href="#about"
           class="z-20 p-3 text-xl font-medium border rounded-xl lg:text-2xl bg-blanc text-bleu hover:bg-bleu hover:text-blanc border-bleu">GET
           STARTED</a>
-        <a href="#"
+        <a href="#contact"
           class="z-20 p-3 text-xl font-medium border rounded-xl lg:text-2xl bg-vert text-blanc hover:bg-blanc hover:text-vert border-vert">CONTACTS</a>
       </div>
     </div>
   </div>
 
   <!-- ////////////////////hi /////////////// -->
-  <div class="flex flex-col items-center justify-center py-10 space-y-6 js-show-on-scroll" id="about">
+  <div class="flex flex-col items-center justify-center py-10 space-y-6 js-show-on-scroll" id="propos">
     <span class="text-xl font-bold text-vert sm:text-2xl lg:text-3xl">A propos</span>
     <div class="hidden w-11/12 overflow-auto lg:flex lg:space-x-8">
       <div class="w-full aboutImg1 rounded-xl lg:w-1/3 ">
         <div class="flex flex-col m-4 bg-bleu/70 rounded-xl text-blanc ">
           <span class="p-2 text-2xl font-bold">Mission :</span>
-          <div class="p-2 text-xl ">Notre mission chez Santé Plus est de fournir des produits médicaux de haute qualité à...</div>
+          <div class="p-2 text-xl ">Notre mission chez Santé Plus est de fournir des produits médicaux de haute qualité
+            à...</div>
 
           <!-- Popup -->
           <!-- Modal toggle -->
@@ -297,7 +301,8 @@
       <div class="w-full aboutImg3 rounded-xl lg:w-1/3">
         <div class="flex flex-col m-5 bg-bleu/70 rounded-xl text-blanc">
           <span class="p-2 text-2xl font-bold">Objectifs :</span>
-          <span class="p-2 text-xl">Notre objectif principal est de répondre aux besoins de nos clients en leur fournissant...</span>
+          <span class="p-2 text-xl">Notre objectif principal est de répondre aux besoins de nos clients en leur
+            fournissant...</span>
 
           <!-- Popup -->
           <!-- Modal toggle -->
@@ -350,7 +355,7 @@
         </div>
       </div>
     </div>
-     <!-- <div class="flex w-11/12 swiper lg:hidden">
+    <!-- <div class="flex w-11/12 swiper lg:hidden">
       <swiper-container  class="mySwiper" pagination="true" pagination-type="progressbar" navigation="true">
         <swiper-slide class="w-[90%] swiper-slide aboutImg1 rounded-xl">
           <div class="flex flex-col p-8 space-y-4 bg-bleu/70 rounded-xl text-blanc">
@@ -371,211 +376,222 @@
           </div>
         </szwiper-slide>
       </swiper-container>  -->
-      <!-- If we need pagination -->
-      <!-- <div class="swiper-pagination"></div> -->
+    <!-- If we need pagination -->
+    <!-- <div class="swiper-pagination"></div> -->
 
-      <!-- If we need navigation buttons -->
-      <!-- <div class="swiper-button-prev bg-opacity-10"></div>
+    <!-- If we need navigation buttons -->
+    <!-- <div class="swiper-button-prev bg-opacity-10"></div>
       <div class="swiper-button-next bg-opacity-10"></div>
     </div>  -->
 
-    
-  <!-- new slider -->
 
-  <swiper-container class="mySwiper lg:hidden" pagination="true" pagination-type="" navigation="true">
-    <swiper-slide class="aboutImg1 rounded-xl p-3">
-      <div class="flex flex-col lg: p-8 space-y-4  rounded-xl text-blanc">
-        <div class="flex flex-col lg:m-5 bg-bleu/70 rounded-xl text-blanc ">
-          <span class="p-2 text-2xl font-bold">Mission :</span>
-          <div class="p-2 text-sm ">Notre mission chez Santé Plus est de fournir des produits médicaux de haute qualité à nos clients,
-            tout en offrant un service exceptionnel et en mettant l'accent sur la satisfaction de la clientèle.
-          </p></div>
+    <!-- new slider -->
 
-          <!-- Popup -->
-          <!-- Modal toggle -->
-          <!-- <button data-modal-target="defaultModal" data-modal-toggle="defaultModal"
+    <swiper-container class="mySwiper lg:hidden" pagination="true" pagination-type="" navigation="true" id="propos">
+      <swiper-slide class="aboutImg1 rounded-xl p-3">
+        <div class="flex flex-col lg: p-8 space-y-4  rounded-xl text-blanc">
+          <div class="flex flex-col lg:m-5 bg-bleu/70 rounded-xl text-blanc ">
+            <span class="p-2 text-2xl font-bold">Mission :</span>
+            <div class="p-2 text-sm ">Notre mission chez Santé Plus est de fournir des produits médicaux de haute
+              qualité à nos clients,
+              tout en offrant un service exceptionnel et en mettant l'accent sur la satisfaction de la clientèle.
+              </p>
+            </div>
+
+            <!-- Popup -->
+            <!-- Modal toggle -->
+            <!-- <button data-modal-target="defaultModal" data-modal-toggle="defaultModal"
             class="p-2 mx-2 my-2 text-xl font-bold border rounded-xl bg-vert text-blanc hover:bg-blanc hover:text-vert w-fit"
             type="button">
             Voir Plus !
           </button> -->
 
-          <!-- Main modal -->
-          <div id="defaultModal" tabindex="-1" aria-hidden="true"
-            class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] md:h-full">
-            <div class="relative w-full h-full max-w-2xl md:h-auto">
-              <!-- Modal content -->
-              <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-                <!-- Modal header -->
-                <div class="flex items-start justify-between p-4 border-b rounded-t bg-bleu/70">
-                  <h3 class="text-3xl font-semibold text-white dark:text-white">
-                    Mission :
-                  </h3>
-                  <button type="button"
-                    class="p-4 text-2xl font-bold border rounded-xl text-blanc hover:bg-blanc hover:text-vert w-fit"
-                    data-modal-hide="defaultModal">
-                    <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <path fill-rule="evenodd"
-                        d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                        clip-rule="evenodd"></path>
-                    </svg>
-                    <span class="sr-only">Close modal</span>
-                  </button>
-                </div>
-                <!-- Modal body -->
-                <div class="p-6 bg-bleu/70">
-                  <p class="text-xl leading-relaxed text-white dark:text-gray-400">
-                    Notre mission chez Santé Plus est de fournir des produits médicaux de haute qualité à nos clients,
-                    tout en offrant un service exceptionnel et en mettant l'accent sur la satisfaction de la clientèle.
-                  </p>
-                  <p class="text-xl leading-relaxed text-white dark:text-gray-400">
-                    Nous sommes déterminés à fournir des solutions de santé innovantes et accessibles pour améliorer la
-                    qualité de vie de nos clients.
-                  </p>
-                </div>
-                <!-- Modal footer -->
-                <div class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b bg-bleu/70">
-                  <button data-modal-hide="defaultModal" type="button"
-                    class="p-4 text-2xl font-bold border rounded-xl bg-vert text-blanc hover:bg-blanc hover:text-vert w-fit">Fermer</button>
+            <!-- Main modal -->
+            <div id="defaultModal" tabindex="-1" aria-hidden="true"
+              class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] md:h-full">
+              <div class="relative w-full h-full max-w-2xl md:h-auto">
+                <!-- Modal content -->
+                <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+                  <!-- Modal header -->
+                  <div class="flex items-start justify-between p-4 border-b rounded-t bg-bleu/70">
+                    <h3 class="text-3xl font-semibold text-white dark:text-white">
+                      Mission :
+                    </h3>
+                    <button type="button"
+                      class="p-4 text-2xl font-bold border rounded-xl text-blanc hover:bg-blanc hover:text-vert w-fit"
+                      data-modal-hide="defaultModal">
+                      <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                          d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                          clip-rule="evenodd"></path>
+                      </svg>
+                      <span class="sr-only">Close modal</span>
+                    </button>
+                  </div>
+                  <!-- Modal body -->
+                  <div class="p-6 bg-bleu/70">
+                    <p class="text-xl leading-relaxed text-white dark:text-gray-400">
+                      Notre mission chez Santé Plus est de fournir des produits médicaux de haute qualité à nos clients,
+                      tout en offrant un service exceptionnel et en mettant l'accent sur la satisfaction de la
+                      clientèle.
+                    </p>
+                    <p class="text-xl leading-relaxed text-white dark:text-gray-400">
+                      Nous sommes déterminés à fournir des solutions de santé innovantes et accessibles pour améliorer
+                      la
+                      qualité de vie de nos clients.
+                    </p>
+                  </div>
+                  <!-- Modal footer -->
+                  <div class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b bg-bleu/70">
+                    <button data-modal-hide="defaultModal" type="button"
+                      class="p-4 text-2xl font-bold border rounded-xl bg-vert text-blanc hover:bg-blanc hover:text-vert w-fit">Fermer</button>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </swiper-slide>
-    <swiper-slide class="aboutImg2 p-3">
-      <div class="flex flex-col p-8 space-y-4  rounded-xl text-blanc">
-        <div class="flex flex-col lg:m-5 bg-bleu/70 rounded-xl text-blanc">
-          <span class="p- text-2xl font-bold">Valeurs :</span>
-          <span class="p-2 text-sm"> 
-            Chez Santé Plus, nous croyons en des valeurs fondamentales qui guident notre entreprise. Nous sommes
-            attachés à la qualité, l'intégrité et l'innovation. Nous sommes fiers de proposer des produits de
-            haute qualité à des prix compétitifs et de mettre l'accent sur la satisfaction de la clientèle à
-            chaque étape du processus.</span>
+      </swiper-slide>
+      <swiper-slide class="aboutImg2 p-3">
+        <div class="flex flex-col p-8 space-y-4  rounded-xl text-blanc">
+          <div class="flex flex-col lg:m-5 bg-bleu/70 rounded-xl text-blanc">
+            <span class="p- text-2xl font-bold">Valeurs :</span>
+            <span class="p-2 text-sm">
+              Chez Santé Plus, nous croyons en des valeurs fondamentales qui guident notre entreprise. Nous sommes
+              attachés à la qualité, l'intégrité et l'innovation. Nous sommes fiers de proposer des produits de
+              haute qualité à des prix compétitifs et de mettre l'accent sur la satisfaction de la clientèle à
+              chaque étape du processus.</span>
 
-          <!-- Popup -->
-          <!-- Modal toggle -->
-          <!-- <button data-modal-target="defaultModal2" data-modal-toggle="defaultModal2"
+            <!-- Popup -->
+            <!-- Modal toggle -->
+            <!-- <button data-modal-target="defaultModal2" data-modal-toggle="defaultModal2"
             class="p-2 mx-2 my-2 text-xl font-bold border rounded-xl bg-vert text-blanc hover:bg-blanc hover:text-vert w-fit"
             type="button">
             Voir Plus !
           </button> -->
 
-          <!-- Main modal -->
-          <div id="defaultModal2" tabindex="-1" aria-hidden="true"
-            class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] md:h-full">
-            <div class="relative w-full h-full max-w-2xl md:h-auto">
-              <!-- Modal content -->
-              <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-                <!-- Modal header -->
-                <div class="flex items-start justify-between p-4 border-b rounded-t bg-bleu/70">
-                  <h3 class="text-3xl font-semibold text-white dark:text-white">
-                    Valeurs :
-                  </h3>
-                  <button type="button"
-                    class="p-4 text-2xl font-bold border rounded-xl text-blanc hover:bg-blanc hover:text-vert w-fit"
-                    data-modal-hide="defaultModal2">
-                    <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <path fill-rule="evenodd"
-                        d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                        clip-rule="evenodd"></path>
-                    </svg>
-                    <span class="sr-only">Close modal</span>
-                  </button>
-                </div>
-                <!-- Modal body -->
-                <div class="p-6 bg-bleu/70">
-                  <p class="text-xl leading-relaxed text-white dark:text-gray-400">
-                    Chez Santé Plus, nous croyons en des valeurs fondamentales qui guident notre entreprise. Nous sommes
-                    attachés à la qualité, l'intégrité et l'innovation. Nous sommes fiers de proposer des produits de
-                    haute qualité à des prix compétitifs et de mettre l'accent sur la satisfaction de la clientèle à
-                    chaque étape du processus.
-                  </p>
-                </div>
-                <!-- Modal footer -->
-                <div class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b bg-bleu/70">
-                  <button data-modal-hide="defaultModal2" type="button"
-                    class="p-4 text-2xl font-bold border rounded-xl bg-vert text-blanc hover:bg-blanc hover:text-vert w-fit">Fermer</button>
+            <!-- Main modal -->
+            <div id="defaultModal2" tabindex="-1" aria-hidden="true"
+              class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] md:h-full">
+              <div class="relative w-full h-full max-w-2xl md:h-auto">
+                <!-- Modal content -->
+                <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+                  <!-- Modal header -->
+                  <div class="flex items-start justify-between p-4 border-b rounded-t bg-bleu/70">
+                    <h3 class="text-3xl font-semibold text-white dark:text-white">
+                      Valeurs :
+                    </h3>
+                    <button type="button"
+                      class="p-4 text-2xl font-bold border rounded-xl text-blanc hover:bg-blanc hover:text-vert w-fit"
+                      data-modal-hide="defaultModal2">
+                      <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                          d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                          clip-rule="evenodd"></path>
+                      </svg>
+                      <span class="sr-only">Close modal</span>
+                    </button>
+                  </div>
+                  <!-- Modal body -->
+                  <div class="p-6 bg-bleu/70">
+                    <p class="text-xl leading-relaxed text-white dark:text-gray-400">
+                      Chez Santé Plus, nous croyons en des valeurs fondamentales qui guident notre entreprise. Nous
+                      sommes
+                      attachés à la qualité, l'intégrité et l'innovation. Nous sommes fiers de proposer des produits de
+                      haute qualité à des prix compétitifs et de mettre l'accent sur la satisfaction de la clientèle à
+                      chaque étape du processus.
+                    </p>
+                  </div>
+                  <!-- Modal footer -->
+                  <div class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b bg-bleu/70">
+                    <button data-modal-hide="defaultModal2" type="button"
+                      class="p-4 text-2xl font-bold border rounded-xl bg-vert text-blanc hover:bg-blanc hover:text-vert w-fit">Fermer</button>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </swiper-slide>
-    <swiper-slide class="aboutImg3 p-3">
-      <div class="flex flex-col p-8 space-y-4  rounded-xl text-blanc">
-        <div class="flex flex-col m-5 bg-bleu/70 rounded-xl text-blanc">
-          <span class="p-2 text-2xl font-bold">Objectifs :</span>
-          <span class="p-2 text-sm"> Notre objectif principal est de répondre aux besoins de nos clients en leur fournissant des produits
-            de hautes qualités et en offrant un service exceptionnel. Nous sommes également déterminés à
-            développer notre entreprise en continuant à proposer des produits innovants et en étendant notre
-            portée à de nouveaux marchés.
-          </p></span>
+      </swiper-slide>
+      <swiper-slide class="aboutImg3 p-3">
+        <div class="flex flex-col p-8 space-y-4  rounded-xl text-blanc">
+          <div class="flex flex-col m-5 bg-bleu/70 rounded-xl text-blanc">
+            <span class="p-2 text-2xl font-bold">Objectifs :</span>
+            <span class="p-2 text-sm"> Notre objectif principal est de répondre aux besoins de nos clients en leur
+              fournissant des produits
+              de hautes qualités et en offrant un service exceptionnel. Nous sommes également déterminés à
+              développer notre entreprise en continuant à proposer des produits innovants et en étendant notre
+              portée à de nouveaux marchés.
+              </p></span>
 
-          <!-- Popup -->
-          <!-- Modal toggle -->
-          <!-- <button data-modal-target="defaultModal3" data-modal-toggle="defaultModal3"
+            <!-- Popup -->
+            <!-- Modal toggle -->
+            <!-- <button data-modal-target="defaultModal3" data-modal-toggle="defaultModal3"
             class="p-2 mx-2 my-2 text-xl font-bold border rounded-xl bg-vert text-blanc hover:bg-blanc hover:text-vert w-fit"
             type="button">
             Voir Plus !
           </button> -->
 
-          <!-- Main modal -->
-          <div id="defaultModal3" tabindex="-1" aria-hidden="true"
-            class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] md:h-full">
-            <div class="relative w-full h-full max-w-2xl md:h-auto">
-              <!-- Modal content -->
-              <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-                <!-- Modal header -->
-                <div class="flex items-start justify-between p-4 border-b rounded-t bg-bleu/70">
-                  <h3 class="text-3xl font-semibold text-white dark:text-white">
-                    Objectifs :
-                  </h3>
-                  <button type="button"
-                    class="p-4 text-2xl font-bold border rounded-xl bg-vert text-blanc hover:bg-blanc hover:text-vert w-fit"
-                    data-modal-hide="defaultModal3">
-                    <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <path fill-rule="evenodd"
-                        d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                        clip-rule="evenodd"></path>
-                    </svg>
-                    <span class="sr-only">Close modal</span>
-                  </button>
-                </div>
-                <!-- Modal body -->
-                <div class="p-6 bg-bleu/70">
-                  <p class="text-sm leading-relaxed text-white dark:text-gray-400">
-                    Notre objectif principal est de répondre aux besoins de nos clients en leur fournissant des produits
-                    de hautes qualités et en offrant un service exceptionnel. Nous sommes également déterminés à
-                    développer notre entreprise en continuant à proposer des produits innovants et en étendant notre
-                    portée à de nouveaux marchés.
-                  </p>
-                </div>
-                <!-- Modal footer -->
-                <div class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b bg-bleu/70">
-                  <button data-modal-hide="defaultModal3" type="button"
-                    class="p-4 text-2xl font-bold border rounded-xl bg-vert text-blanc hover:bg-blanc hover:text-vert w-fit">Fermer</button>
+            <!-- Main modal -->
+            <div id="defaultModal3" tabindex="-1" aria-hidden="true"
+              class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] md:h-full">
+              <div class="relative w-full h-full max-w-2xl md:h-auto">
+                <!-- Modal content -->
+                <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+                  <!-- Modal header -->
+                  <div class="flex items-start justify-between p-4 border-b rounded-t bg-bleu/70">
+                    <h3 class="text-3xl font-semibold text-white dark:text-white">
+                      Objectifs :
+                    </h3>
+                    <button type="button"
+                      class="p-4 text-2xl font-bold border rounded-xl bg-vert text-blanc hover:bg-blanc hover:text-vert w-fit"
+                      data-modal-hide="defaultModal3">
+                      <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                          d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                          clip-rule="evenodd"></path>
+                      </svg>
+                      <span class="sr-only">Close modal</span>
+                    </button>
+                  </div>
+                  <!-- Modal body -->
+                  <div class="p-6 bg-bleu/70">
+                    <p class="text-sm leading-relaxed text-white dark:text-gray-400">
+                      Notre objectif principal est de répondre aux besoins de nos clients en leur fournissant des
+                      produits
+                      de hautes qualités et en offrant un service exceptionnel. Nous sommes également déterminés à
+                      développer notre entreprise en continuant à proposer des produits innovants et en étendant notre
+                      portée à de nouveaux marchés.
+                    </p>
+                  </div>
+                  <!-- Modal footer -->
+                  <div class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b bg-bleu/70">
+                    <button data-modal-hide="defaultModal3" type="button"
+                      class="p-4 text-2xl font-bold border rounded-xl bg-vert text-blanc hover:bg-blanc hover:text-vert w-fit">Fermer</button>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </swiper-slide>
-    <!--  -->
-  </swiper-container>
+      </swiper-slide>
+      <!--  -->
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev bg-opacity-10"></div>
+      <div class="swiper-button-next bg-opacity-10"></div>
+    </swiper-container>
 
   </div>
   <div class="flex flex-col space-y-8 bg-bleu p-11" id="product">
     <div class="flex space-x-8 js-show-on-scroll">
       <div class="flex w-full p-5 bg-blanc rounded-xl lg:w-3/5">
         <div class="flex flex-col w-full space-y-4 sm:w-1/2">
-          <span class="text-4xl font-bold text-bleu">Lorem ipsum</span>
-          <span class="text-2xl font-medium text-bleu">consectetur adipiscing elit, sed do eiusmod agna aliqua</span>
+          <span class="text-4xl font-bold text-bleu">Nos différents produits</span>
+          <span class="text-2xl font-medium text-bleu">Nous mettons à votre disposition tout type de matériels médicaux
+            et prestations de services</span>
           <!-- Popup -->
           <!-- Modal toggle -->
           <a href="#product" data-modal-target="defaultModal5" data-modal-toggle="defaultModal5"
@@ -585,8 +601,8 @@
 
           <!-- Main modal -->
           <div id="defaultModal5" tabindex="-1" aria-hidden="true"
-            class="fixed top-0 left-0 right-0 z-50 hidden w-full p-2 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] md:h-full">
-            <div class="relative w-full h-full max-w-2xl md:h-auto">
+            class="fixed top-0 left-0 right-0 z-50 hidden w-full p-2 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)]">
+            <div class="relative max-w-2xl">
               <!-- Modal content -->
               <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
                 <!-- Modal header -->
@@ -607,39 +623,30 @@
                   </button>
                 </div>
                 <!-- Modal body -->
-                <div class="grid items-center justify-center grid-cols-4 p-6 space-x-4 space-y-4">
-                  <div class="items-center">
-                    <img src="../src/img/prod/00.jpg" alt="" height="150" width="200">
-                    <p>Instrument 1</p>
+                <div class="pb-4">
+                  <div class="grid gap-4 items-center justify-center grid-cols-4 px-6 space-x-4 space-y-4">
+                    <img src="../src/img/bequilles.jpg" alt="" style="width: 300px; height: 100px">
+                    <img src="../src/img/bistouri.jpg" alt="" style="width: 300px; height: 100px;">
+                    <img src="../src/img/fauteuil.jpg" alt="" style="width: 300px; height: 100px;">
+                    <img src="../src/img/gants.jpg" alt="" style="width: 300px; height: 100px;">
                   </div>
-                  <div>
-                    <img src="../src/img/prod/1.jpg" alt="" height="150" width="200">
-                    <p>Instrument 2</p>
+                  <div class="grid gap-4 items-center justify-center grid-cols-4 px-6 space-x-4 space-y-4">
+                    <p>Bequilles</p>
+                    <p>Scalpelles, Bistouris...</p>
+                    <p>Fauteuils roulants</p>
+                    <p>Gants médicaux</p>
                   </div>
-                  <div>
-                    <img src="../src/img/prod/2 (1).jpg" alt="" height="150" width="200">
-                    <p>Instrument 3</p>
+                  <!-- Nouvelles images à rajouter dans cette section (la première img correspond au premier p et ainsi de suite) -->
+
+                  <!-- <hr class="bg-gray-400 h-2 my-4" /> 
+                  <div class="grid gap-4 items-center justify-center grid-cols-4 px-6 space-x-4 space-y-4">
+                    <img src="../src/img/bequilles.jpg" alt="" style="width: 300px; height: 100px">
+                    <img src="../src/img/bistouri.jpg" alt="" style="width: 300px; height: 100px;">
                   </div>
-                  <div>
-                    <img src="../src/img/prod/2.jpg" alt="" height="200" width="200">
-                    <p>Instrument 4</p>
-                  </div>
-                  <div>
-                    <img src="../src/img/prod/4.jpg" alt="" height="150" width="200">
-                    <p>Instrument 5</p>
-                  </div>
-                  <div>
-                    <img src="../src/img/prod/5.jpg" alt="" height="150" width="200">
-                    <p>Instrument 6</p>
-                  </div>
-                  <div>
-                    <img src="../src/img/prod/6.jpg" alt="" height="150" width="200">
-                    <p>Instrument 7</p>
-                  </div>
-                  <div>
-                    <img src="../src/img/prod/7.jpg" alt="" height="150" width="200">
-                    <p>Instrument 8</p>
-                  </div>
+                  <div class="grid gap-4 items-center justify-center grid-cols-4 px-6 space-x-4 space-y-4">
+                    <p>Bequilles</p>
+                    <p>Scalpelles, Bistouris...</p>
+                  </div> -->
                 </div>
                 <!-- Modal footer -->
                 <div class="flex items-center p-4 space-x-2 border-t border-gray-200 rounded-b bg-bleu/70">
@@ -662,7 +669,7 @@
     <div class="hidden space-x-8 lg:flex">
       <div class="flex flex-col items-center justify-center w-1/3 p-5 bg-blanc rounded-xl">
         <img src="../src/img/chaise_roulant.png" alt="" width="200">
-        <span class="text-3xl font-bold text-bleu">Fauteuille roullante</span>
+        <span class="text-3xl font-bold text-bleu">Fauteuil roullant</span>
       </div>
       <div class="flex flex-col items-center justify-between w-1/3 p-5 pt-8 bg-blanc rounded-xl">
         <img src="../src/img/bequille.png" alt="" width="250">
@@ -674,7 +681,7 @@
       </div>
     </div>
   </div>
-  <footer class="flex flex-col p-10 space-y-4 sm:flex-row lg:space-x-6">
+  <footer class="flex flex-col p-10 space-y-4 sm:flex-row lg:space-x-6" id="contact">
     <div class="flex flex-col space-y-5 w-[90%] sm:w-1/3">
       <div class="flex items-center justify-center space-x-2">
         <img src="../src/img/esjLogo.png" alt="" height="70" width="100">
@@ -706,20 +713,21 @@
         <a href="#product" class="text-2xl hover:underline">Nos produits</a>
       </div>
     </div>
-    <div class="flex flex-col space-y-5 w-[90%] sm:w-1/3">
+    <form class="flex flex-col space-y-5 w-[90%] sm:w-1/3">
       <span class="text-3xl font-bold text-vert">Rejoignez notre new letters</span>
-      <input type="text"
-        class="p-2 text-xl font-medium bg-white border border-bleu text-bleu rounded-md placeholder:text-bleu placeholder: outline-bleu"
+      <input required type="text"
+        class="p-2 text-xl font-medium bg-white border-2 border-bleu text-bleu rounded-md placeholder:text-bleu placeholder: outline-bleu"
         placeholder="Nom">
-      <input type="text"
-        class="p-2 text-xl font-medium bg-white border border-bleu text-bleu rounded-md placeholder:text-bleu placeholder: outline-bleu"
+      <input required type="text"
+        class="p-2 text-xl font-medium bg-white border-2 border-bleu text-bleu rounded-md placeholder:text-bleu placeholder: outline-bleu"
         placeholder="Prénoms">
-      <input type="text"
-        class="p-2 text-xl font-medium bg-white border border-bleu text-bleu rounded-md placeholder:text-bleu placeholder: outline-bleu"
+      <input type="email"
+        class="p-2 text-xl font-medium bg-white border-2 border-bleu text-bleu rounded-md placeholder:text-bleu placeholder: outline-bleu"
         placeholder="Email">
-      <a href="#"
-        class="p-3 text-lg font-bold border-2 rounded-xl bg-vert text-blanc hover:bg-blanc hover:text-vert border-vert w-fit">Soumettre</a>
-    </div>
+        <!-- Le type submit retire le bg-vert du boutton ci (Cause: inconnu)-->
+      <button disabled type="submit"
+        class="p-3 text-lg font-bold border-2 rounded-xl bg-vert text-blanc hover:bg-blanc hover:text-vert border-vert w-fit cursor-pointer">Soumettre</button>
+    </form>
   </footer>
   <div class="flex items-center justify-center py-3 space-x-6 text-4xl bg-bleu text-blanc">
     <a href="#" class="hover:text-vert"><i class="lab la-whatsapp"></i></a>
@@ -735,7 +743,7 @@
   <script src="./main.js"></script>
   <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script> -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
-  
+
 
 </body>
 

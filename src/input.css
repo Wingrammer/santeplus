@@ -10,7 +10,7 @@
     background-repeat: no-repeat;
 }
 .aboutImg1{
-    background: url("../src/img/ab1.jpg") no-repeat center;
+    background: url("../src/img/comprimer.png") no-repeat center;
     background-size: 100%;
 }
 .aboutImg2{
@@ -70,7 +70,7 @@ body {
 }
 
 swiper-container {
-  width: 425px !important;
+  width: 350px !important;
   height: 300px;
 }
 
@@ -81,13 +81,13 @@ swiper-slide {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 425px !important;
+  width: 350px !important;
   height: 300px;
 }
 
 swiper-slide img {
   display: block;
-  width: 425;
+  width: 350;
   height: 200;
   object-fit: cover;
 }

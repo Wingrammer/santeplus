@@ -6,9 +6,10 @@ const smtpTransport = require("nodemailer-smtp-transport");
 const app = express();
 const fs = require("fs");
 require("dotenv").config();
+const emailjs = require('@emailjs/nodejs');
 
 const publicPath = path.join(__dirname, ".", "src");
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 3001;
 
 var corsOptions = {
   origin: ["http://127.0.0.1:5501"],
@@ -148,11 +149,7 @@ async function sendEmail(nom, prenom, email, message) {
   // Preview URL: https://ethereal.email/message/WaQKMgKddxQDoou...
 }
 
-app.options("/newsletter", cors(corsOptions));
-app.post("/newsletter", (req, res) => {
-  const { nom, prenom, email, message } = req.body;
-  console.log(nom);
-});
+
 app.get("/test_maizzle", (req, res) => {
   Maizzle.render(template, {
     tailwind: {
@@ -172,6 +169,22 @@ app.get("/test_send", (req, res) => {
     .then(() => res.sendStatus(200))
     .catch((e) => res.send(e.message));
 });
+
+app.post("/newsletter", (req, res) => {
+   //code here
+   const {nom, prenom, email} = req.body
+   const templateParams = {
+      from_name: nom + prenom,
+      message: email
+  };
+   emailjs.send(process.env.SERVICE_ID, process.env.TEMPLATE_ID, templateParams, {publicKey: process.env.PUBLIC_KEY, privateKey: process.env.PRIVATE_KEY})
+   .then((response) => {
+       console.log('SUCCESS!', response.status, response.text);
+   }, (error) => {
+       console.log('FAILED...', error.text);
+   });
+ });
+
 app.get("*", (req, res) => {
   res.sendFile(path.join(publicPath, "index.html"));
 });

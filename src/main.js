@@ -1,27 +1,15 @@
 $(document).ready(function() {
 
-    async function sendEmail(){
+    
+document.getElementById("submit").addEventListener('click', async (event) => {
+  //Empecher une reactualisation de la page
+  event.preventDefault()
+  //Recuperer le formulaire
+  const form = document.forms["newsletters"]
+  //Passer le formulaire a notre fonction sendMail
+  let response = await sendEmail(form)
 
-        if(validate()){
-          var data = {
-            nom: form.nom.value,
-            prenom: form.prenom.value,
-            email: form.email.value,
-          }
-          await fetch('http://localhost:3000/newsletter', {
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(data)
-          });
-        }
-        else{
-          console.log("")
-        }
-    }
-
-
+})
 //     const swiper = new Swiper('.swiper', {
 //         // Optional parameters
 //         direction: 'horizontal',
@@ -62,6 +50,8 @@ const swiper = new Swiper('.swiper', {
   },
 });
 
+
+
 /* animation scloll
 
  const callback = function (entries) {
@@ -81,3 +71,22 @@ const swiper = new Swiper('.swiper', {
    target.classList.add("opacity-0");
    observer.observe(target); */
  });
+
+async function sendEmail(form){
+  //Recuperer les valeurs du formulaire
+  var data = {
+    nom: form["lastName"].value,
+    prenom: form["firstName"].value,
+    email: form["email"].value,
+  }
+  console.log(data)
+  //Envoyer notre requete
+  await fetch('/newsletter', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(data)
+  });
+  return false;
+}

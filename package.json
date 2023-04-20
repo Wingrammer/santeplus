@@ -20,6 +20,12 @@
   },
   "homepage": "https://github.com/Wingrammer/santeplus#readme",
   "dependencies": {
-    "flowbite": "^1.6.4"
+    "@maizzle/framework": "^4.4.4",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "flowbite": "^1.6.4",
+    "nodemailer": "^6.9.1",
+    "nodemailer-smtp-transport": "^2.7.4"
   }
 }

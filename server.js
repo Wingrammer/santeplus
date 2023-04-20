@@ -7,7 +7,7 @@ const app = express();
 const fs = require("fs");
 require("dotenv").config();
 
-const publicPath = path.join(__dirname, ".", "public");
+const publicPath = path.join(__dirname, ".", "src");
 const port = process.env.PORT || 3000;
 
 var corsOptions = {

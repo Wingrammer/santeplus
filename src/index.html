@@ -4,8 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../dist/output.css">
+  
   <link rel="stylesheet" href="input.css">
+  <link rel="stylesheet" href="output.css">
   <!-- swiper -->
   <link rel="stylesheet" href="path/to/navigation-element.min.css" />
   <link rel="stylesheet" href="path/to/pagination-element.min.css" />
@@ -644,10 +645,10 @@
                 <!-- Modal body -->
                 <div class="pb-4">
                   <div class="grid gap-4 items-center justify-center grid-cols-4 px-6 space-x-4 space-y-4">
-                    <img src="../src/img/bequilles.jpg" alt="" style="width: 300px; height: 100px">
-                    <img src="../src/img/bistouri.jpg" alt="" style="width: 300px; height: 100px;">
-                    <img src="../src/img/fauteuil.jpg" alt="" style="width: 300px; height: 100px;">
-                    <img src="../src/img/gants.jpg" alt="" style="width: 300px; height: 100px;">
+                    <img src="./img/bequilles.jpg" alt="" style="width: 300px; height: 100px">
+                    <img src="./img/bistouri.jpg" alt="" style="width: 300px; height: 100px;">
+                    <img src="./img/fauteuil.jpg" alt="" style="width: 300px; height: 100px;">
+                    <img src="./img/gants.jpg" alt="" style="width: 300px; height: 100px;">
                   </div>
                   <div class="grid gap-4 items-center justify-center grid-cols-4 px-6 space-x-4 space-y-4">
                     <p>Bequilles</p>
@@ -659,8 +660,8 @@
 
                   <!-- <hr class="bg-gray-400 h-2 my-4" /> 
                   <div class="grid gap-4 items-center justify-center grid-cols-4 px-6 space-x-4 space-y-4">
-                    <img src="../src/img/bequilles.jpg" alt="" style="width: 300px; height: 100px">
-                    <img src="../src/img/bistouri.jpg" alt="" style="width: 300px; height: 100px;">
+                    <img src="./img/bequilles.jpg" alt="" style="width: 300px; height: 100px">
+                    <img src="./img/bistouri.jpg" alt="" style="width: 300px; height: 100px;">
                   </div>
                   <div class="grid gap-4 items-center justify-center grid-cols-4 px-6 space-x-4 space-y-4">
                     <p>Bequilles</p>
@@ -677,25 +678,25 @@
           </div>
         </div>
         <div class="hidden sm:flex">
-          <img src="../src/img/1.jpg" alt="">
+          <img src="./img/1.jpg" alt="">
         </div>
       </div>
       <div class="flex-col items-center justify-center hidden w-2/5 p-5 space-y-4 lg:flex bg-blanc rounded-xl">
-        <img src="../src/img/cardiogram.png" alt="" height="200" width="200">
+        <img src="./img/cardiogram.png" alt="" height="200" width="200">
         <span class="text-3xl font-bold text-bleu">Stéthoscope</span>
       </div>
     </div>
     <div class="hidden space-x-8 lg:flex">
       <div class="flex flex-col items-center justify-center w-1/3 p-5 bg-blanc rounded-xl">
-        <img src="../src/img/chaise_roulant.png" alt="" width="200">
+        <img src="./img/chaise_roulant.png" alt="" width="200">
         <span class="text-3xl font-bold text-bleu">Fauteuil roullant</span>
       </div>
       <div class="flex flex-col items-center justify-between w-1/3 p-5 pt-8 bg-blanc rounded-xl">
-        <img src="../src/img/bequille.png" alt="" width="250">
+        <img src="./img/bequille.png" alt="" width="250">
         <span class="text-3xl font-bold text-bleu">Bequilles</span>
       </div>
       <div class="flex flex-col items-center justify-center w-1/3 p-5 bg-blanc rounded-xl">
-        <img src="../src/img/Vaccine Carriers.png" alt="" width="200">
+        <img src="./img/Vaccine Carriers.png" alt="" width="200">
         <span class="text-3xl font-bold text-bleu">Chaine Froid</span>
       </div>
     </div>
@@ -705,7 +706,7 @@
   <footer class="flex flex-col p-10 space-y-4 sm:flex-row lg:space-x-6" id="contact">
     <div class="flex flex-col space-y-5 w-[90%] sm:w-1/3">
       <div class="flex items-center justify-center space-x-2">
-        <img src="../src/img/esjLogo.png" alt="" height="70" width="100">
+        <img src="./img/esjLogo.png" alt="" height="70" width="100">
         <p class="text-4xl font-bold nom_entreprise text-bleu">ESJ Santé Plus</p>
       </div>
       <!--<span class="text-2xl font-semibold text-bleu">consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
@@ -734,19 +735,20 @@
         <a href="#product" class="text-2xl hover:underline">Nos produits</a>
       </div>
     </div>
-    <form class="flex flex-col space-y-5 w-[90%] sm:w-1/3">
+    <form onsubmit="return sendEmail();" name="newsletters" class="flex flex-col space-y-5 w-[90%] sm:w-1/3">
       <span class="text-3xl font-bold text-vert">Rejoignez notre new letters</span>
-      <input required type="text"
+      <input required name="firstName" type="text"
         class="p-2 text-xl font-medium bg-white border-2 border-bleu text-bleu rounded-md placeholder:text-bleu placeholder: outline-bleu"
         placeholder="Nom">
-      <input required type="text"
+      <input required type="text" name="lastName"
         class="p-2 text-xl font-medium bg-white border-2 border-bleu text-bleu rounded-md placeholder:text-bleu placeholder: outline-bleu"
         placeholder="Prénoms">
-      <input type="email"
+      <input required type="email" name="email"
         class="p-2 text-xl font-medium bg-white border-2 border-bleu text-bleu rounded-md placeholder:text-bleu placeholder: outline-bleu"
         placeholder="Email">
-      <!-- Le type submit retire le bg-vert du boutton ci (Cause: inconnu)-->
-      <button disabled type="submit"
+        <!-- Le type submit retire le bg-vert du boutton ci (Cause: inconnu)-->
+      <button id="submit" type="submit"
+>>>>>>> 92fb15cda77e1774f4702683f46ce41513ae1b51
         class="p-3 text-lg font-bold border-2 rounded-xl bg-vert text-blanc hover:bg-blanc hover:text-vert border-vert w-fit cursor-pointer">Soumettre</button>
     </form>
   </footer>

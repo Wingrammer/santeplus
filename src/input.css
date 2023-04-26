@@ -5,20 +5,20 @@
 
 
 .banner {
-    background: url("../src/img/bgBanner.png") no-repeat fixed center;
+    background: url("./img/bgBanner.png") no-repeat fixed center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 .aboutImg1{
-    background: url("../src/img/comprimer.png") no-repeat center;
+    background: url("./img/comprimer.png") no-repeat center;
     background-size: 100%;
 }
 .aboutImg2{
-    background: url("../src/img/ab2.jpg") no-repeat center;
+    background: url("./img/ab2.jpg") no-repeat center;
     background-size: 100%;
 }
 .aboutImg3{
-    background: url("../src/img/ab3.jpg") no-repeat center;
+    background: url("./img/ab3.jpg") no-repeat center;
     background-size: 100%;
 }
 
